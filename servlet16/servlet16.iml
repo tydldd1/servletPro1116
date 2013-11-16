@@ -21,7 +21,7 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" scope="PROVIDED" name="Tomcat 6.0" level="application_server_libraries" />
     <orderEntry type="library" scope="TEST" name="junit-4.10" level="application" />
-    <orderEntry type="library" name="log4j" level="application" />
+    <orderEntry type="library" name="commons-logging-1.1" level="project" />
   </component>
 </module>
 
