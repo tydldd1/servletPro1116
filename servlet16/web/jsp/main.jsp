@@ -1,8 +1,8 @@
 <%--
   Created by IntelliJ IDEA.
   User: 成如
-  Date: 13-11-16
-  Time: 下午10:40
+  Date: 13-11-17
+  Time: 下午2:17
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
@@ -16,6 +16,6 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     <title></title>
   </head>
   <body>
-    <jsp:forward page="jsp/login.jsp"/>
+        主页面
   </body>
 </html>

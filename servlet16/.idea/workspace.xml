@@ -1,18 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8e0368f4-d55b-4ceb-b236-58ae8acc94b8" name="Default" comment="log4j">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/ru/project/utils/Test2.java" />
+    <list default="true" id="8e0368f4-d55b-4ceb-b236-58ae8acc94b8" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/lib/gson-2.1.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/ru/project/servlet/Login.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/gson_2_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/jQuery1.9.1-min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/login.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jsp/login.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jsp/main.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jsp/verifyCodeImg.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/index.jsp" afterPath="$PROJECT_DIR$/web/index.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/servlet16.iml" afterPath="$PROJECT_DIR$/servlet16.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="servlet16.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/web.xml" changelist="8e0368f4-d55b-4ceb-b236-58ae8acc94b8" time="1384618881700" ignored="false" />
+    <file path="/web.xml" changelist="8e0368f4-d55b-4ceb-b236-58ae8acc94b8" time="1384666706334" ignored="false" />
     <file path="/Log4jInitMethod.java" changelist="8e0368f4-d55b-4ceb-b236-58ae8acc94b8" time="1384658831992" ignored="false" />
     <file path="/log4j.properties" changelist="8e0368f4-d55b-4ceb-b236-58ae8acc94b8" time="1384657314684" ignored="false" />
     <file path="/Test.java" changelist="8e0368f4-d55b-4ceb-b236-58ae8acc94b8" time="1384622813665" ignored="false" />
     <file path="/fragment.java" changelist="8e0368f4-d55b-4ceb-b236-58ae8acc94b8" time="1384623996326" ignored="false" />
-    <file path="/Dummy.txt" changelist="8e0368f4-d55b-4ceb-b236-58ae8acc94b8" time="1384658970027" ignored="false" />
+    <file path="/Dummy.txt" changelist="8e0368f4-d55b-4ceb-b236-58ae8acc94b8" time="1384659524631" ignored="false" />
+    <file path="/login.jsp" changelist="8e0368f4-d55b-4ceb-b236-58ae8acc94b8" time="1384661527938" ignored="false" />
+    <file path="/login.js" changelist="8e0368f4-d55b-4ceb-b236-58ae8acc94b8" time="1384669156701" ignored="false" />
+    <file path="/index.jsp" changelist="8e0368f4-d55b-4ceb-b236-58ae8acc94b8" time="1384660824863" ignored="false" />
+    <file path="/a.dummy" changelist="8e0368f4-d55b-4ceb-b236-58ae8acc94b8" time="1384663724119" ignored="false" />
+    <file path="/Login.java" changelist="8e0368f4-d55b-4ceb-b236-58ae8acc94b8" time="1384668736800" ignored="false" />
+    <file path="/main.jsp" changelist="8e0368f4-d55b-4ceb-b236-58ae8acc94b8" time="1384669380793" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,24 +89,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="log4j.properties" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/resource/log4j/log4j.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="43" selection-start="883" selection-end="883" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Test2.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/ru/project/utils/Test2.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="18" selection-start="156" selection-end="156" vertical-scroll-proportion="0.40219378">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="web.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
           <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorProvider">
@@ -100,12 +98,43 @@
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="25" selection-start="300" selection-end="300" vertical-scroll-proportion="-3.6666667">
+            <state line="24" column="42" selection-start="1104" selection-end="1104" vertical-scroll-proportion="-11.366667">
               <folding />
             </state>
           </provider>
           <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleGeneralEditorProvider">
             <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Login.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/ru/project/servlet/Login.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="27" column="31" selection-start="800" selection-end="800" vertical-scroll-proportion="0.4771481">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="login.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/js/login.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="21" column="34" selection-start="530" selection-end="530" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="n#!!doc;n#logCheck#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.jsp" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/jsp/main.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="12" column="6" selection-start="369" selection-end="369" vertical-scroll-proportion="-7.096774">
+              <folding />
+            </state>
           </provider>
         </entry>
       </file>
@@ -128,10 +157,15 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/web/WEB-INF/log4j.properties" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/src/com/ru/project/utils/Test.java" />
         <option value="$PROJECT_DIR$/src/resource/log4j/log4j.properties" />
         <option value="$PROJECT_DIR$/src/com/ru/project/utils/Log4jInitMethod.java" />
+        <option value="$PROJECT_DIR$/web/index.jsp" />
+        <option value="$PROJECT_DIR$/web/jsp/login.jsp" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/src/com/ru/project/servlet/Login.java" />
+        <option value="$PROJECT_DIR$/web/js/login.js" />
+        <option value="$PROJECT_DIR$/web/jsp/main.jsp" />
       </list>
     </option>
   </component>
@@ -176,7 +210,7 @@
     <OptionsSetting value="true" id="Edit" />
     <OptionsSetting value="true" id="Undo Check Out" />
     <OptionsSetting value="true" id="Get Latest Version" />
-    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="2" id="Add" />
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectReloadState">
@@ -259,11 +293,25 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="WEB-INF" />
+              <option name="myItemId" value="jsp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="servlet16" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="servlet16" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="lib" />
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -278,6 +326,28 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="log4j" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="servlet16" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="servlet16" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="project" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -299,25 +369,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="utils" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="servlet16" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="servlet16" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="project" />
+              <option name="myItemId" value="servlet" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -336,7 +388,7 @@
     <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
     <property name="MemberChooser.sorted" value="false" />
     <property name="recentsLimit" value="5" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../ssh/ssh0605/WebRoot/WEB-INF/lib/log4j-1.2.13.jar!/" />
+    <property name="last_opened_file_path" value="G:/intelliJ-workspace/DtpSer" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
@@ -351,6 +403,9 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="G:\GitRepositories\servletPro1116\servlet16\web\WEB-INF\lib" />
+      <recent name="G:\GitRepositories\servletPro1116\servlet16\web\jsp" />
+      <recent name="G:\GitRepositories\servletPro1116\servlet16\web\js" />
       <recent name="G:\GitRepositories\servletPro1116\servlet16\web\WEB-INF" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -483,7 +538,6 @@
       <method />
     </configuration>
     <configuration default="false" name="Tomcat 6.0" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 6.0">
-      <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
         <artifact name="servlet16:war exploded">
           <settings>
@@ -559,8 +613,8 @@
       </method>
     </configuration>
     <list size="2">
-      <item index="0" class="java.lang.String" itemvalue="Tomcat Server.Tomcat 6.0" />
-      <item index="1" class="java.lang.String" itemvalue="Application.Test" />
+      <item index="0" class="java.lang.String" itemvalue="Application.Test" />
+      <item index="1" class="java.lang.String" itemvalue="Tomcat Server.Tomcat 6.0" />
     </list>
     <recent_temporary>
       <list size="1">
@@ -608,7 +662,11 @@
       <created>1384658847885</created>
       <updated>1384658847885</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="log4j">
+      <created>1384659530167</created>
+      <updated>1384659530167</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -620,9 +678,9 @@
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39965397" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.88754326" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.449827" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -634,8 +692,8 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32871974" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17656012" sideWeight="0.11245675" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.88754326" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17656012" sideWeight="0.550173" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.449827" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -709,87 +767,91 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/resource/log4j/log4j.properties">
+    <entry file="file://$PROJECT_DIR$/web/jsp/verifyCodeImg.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="43" selection-start="410" selection-end="413" vertical-scroll-proportion="0.0">
+        <state line="12" column="33" selection-start="377" selection-end="377" vertical-scroll-proportion="0.5116279">
           <folding />
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
-      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorProvider">
-        <state />
-      </provider>
-      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorReferencesProvider">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="26" selection-start="419" selection-end="419" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleGeneralEditorProvider">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/resource/log4j/log4j.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="43" selection-start="410" selection-end="413" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
-      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorProvider">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="26" selection-start="419" selection-end="419" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorReferencesProvider">
-        <state />
-      </provider>
-      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleGeneralEditorProvider">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/ru/project/utils/Log4jInitMethod.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="11" selection-start="762" selection-end="762" vertical-scroll-proportion="0.0">
+        <state line="43" column="53" selection-start="1241" selection-end="1255" vertical-scroll-proportion="0.45318353">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://G:/intelliJ-workspace/dtpalarm/src/com/topwalk/dtpser/alarm/main/InitAlarm.java">
+    <entry file="file://$PROJECT_DIR$/../../ssh/ssh0605/src/com/ru/ssh/login/action/LoginAction.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="9" selection-start="1284" selection-end="1284" vertical-scroll-proportion="0.40219378" />
+        <state line="44" column="30" selection-start="1194" selection-end="1194" vertical-scroll-proportion="0.6032907">
+          <folding />
+        </state>
       </provider>
     </entry>
-    <entry file="javaeeDummy://JavaeeElement:/ae4358c6/Log4jInit/servlet16/web/Web/Servlet">
-      <provider selected="true" editor-type-id="com.intellij.javaee.module.view.web.viewlets.ServletEditorProvider">
-        <state />
-      </provider>
-    </entry>
-    <entry file="javaeeDummy://JavaeeElement:/ae4358c6/Log4JInit/servlet16/web/Web/Servlet">
-      <provider selected="true" editor-type-id="com.intellij.javaee.module.view.web.viewlets.ServletEditorProvider">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ru/project/utils/Test.java">
+    <entry file="file://$PROJECT_DIR$/web/jsp/login.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="16" selection-start="138" selection-end="138" vertical-scroll-proportion="0.32175502" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ru/project/utils/Log4jInitMethod.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="27" selection-start="451" selection-end="451" vertical-scroll-proportion="0.2883895">
+        <state line="26" column="59" selection-start="1014" selection-end="1014" vertical-scroll-proportion="-9.935484">
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="n#!!doc;n#jsp:root#0;n#!!top" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/web/WEB-INF/lib/gson-2.1.jar!/com/google/gson/internal/GsonInternalAccess.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="11" selection-start="281" selection-end="281" vertical-scroll-proportion="-4.2">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/ProgramFiles/Java/jdk1.6.0_38/src.zip!/java/lang/Object.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="0" selection-start="482" selection-end="482" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/ProgramFiles/Java/jdk1.6.0_38/src.zip!/java/util/concurrent/atomic/AtomicInteger.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="164" column="0" selection-start="4637" selection-end="4637" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/ProgramFiles/Java/jdk1.6.0_38/src.zip!/java/util/logging/Level.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="243" column="0" selection-start="8399" selection-end="8399" vertical-scroll-proportion="0.33103448">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/ProgramFiles/Java/jdk1.6.0_38/src.zip!/java/lang/ThreadLocal.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="112" column="0" selection-start="4219" selection-end="4219" vertical-scroll-proportion="0.30363035">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/ProgramFiles/Java/jdk1.6.0_38/src.zip!/java/util/logging/Logger.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1155" column="0" selection-start="46280" selection-end="46280" vertical-scroll-proportion="0.3322785">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/web/WEB-INF/lib/gson-2.1.jar!/com/google/gson/Gson.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="11" selection-start="1078" selection-end="1078" vertical-scroll-proportion="0.19842829">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/resource/log4j/log4j.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="22" selection-start="862" selection-end="862" vertical-scroll-proportion="0.576779">
+          <folding />
         </state>
       </provider>
     </entry>
@@ -798,7 +860,7 @@
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="25" selection-start="300" selection-end="300" vertical-scroll-proportion="-3.6666667">
+        <state line="24" column="42" selection-start="1104" selection-end="1104" vertical-scroll-proportion="-11.366667">
           <folding />
         </state>
       </provider>
@@ -809,17 +871,28 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/resource/log4j/log4j.properties">
+    <entry file="file://$PROJECT_DIR$/web/jsp/main.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="43" selection-start="883" selection-end="883" vertical-scroll-proportion="0.0">
+        <state line="12" column="6" selection-start="369" selection-end="369" vertical-scroll-proportion="-7.096774">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ru/project/utils/Test2.java">
+    <entry file="file://$PROJECT_DIR$/web/js/login.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="18" selection-start="156" selection-end="156" vertical-scroll-proportion="0.40219378">
-          <folding />
+        <state line="21" column="34" selection-start="530" selection-end="530" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="n#!!doc;n#logCheck#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ru/project/servlet/Login.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="31" selection-start="800" selection-end="800" vertical-scroll-proportion="0.4771481">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
