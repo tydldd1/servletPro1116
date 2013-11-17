@@ -8,6 +8,7 @@
 function logCheck(){
     var userName = $("#userName").val();
     var password = $("#password").val();
+
     var params = {
         "userName":userName,
         "password":password
@@ -18,10 +19,9 @@ function logCheck(){
         data:params,
         dataType:"json",
         success:function(data){
-            alert(data);
             if(data == "success"){
-                window.Location.href("jsp/main.jsp");
-            }else{
+                window.location.href = "jsp/main.jsp";
+            }else if(data == "fail"){
                 alert("用户名或密码错误");
             }
         },
