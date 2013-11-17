@@ -8,7 +8,7 @@
     <servlet>
         <servlet-name>log4jInit</servlet-name><!--servlet名称（最好和类名一致）和mapping的名称保持一致-->
         <servlet-class>com.ru.project.utils.Log4jInitMethod</servlet-class>
-        <!--是启动顺序，0：表示什么时候用什么时候启动，1：表示自动启动 -->
+        <!--启动顺序，1表示第一个被启动，2第二个被启动。。。。 -->
         <load-on-startup>1</load-on-startup>
     </servlet>
     <servlet-mapping>
@@ -35,4 +35,33 @@
         <servlet-name>jumpPage</servlet-name>
         <url-pattern>/jumpPage</url-pattern>
     </servlet-mapping>
+    <!--servletConfig配置-->
+    <servlet>
+        <servlet-name>servletConfig</servlet-name><!--servlet名称（最好和类名一致）和mapping的名称保持一致-->
+        <servlet-class>com.ru.project.servletConfig.servlet.ServletConfig</servlet-class>
+        <!--servlet参数，这里配置的参数只能被当前servlet使用-->
+        <init-param>
+            <param-name>encoding</param-name>
+            <param-value>UTF-8</param-value>
+        </init-param>
+        <init-param>
+            <param-name>param1</param-name>
+            <param-value>ruge</param-value>
+        </init-param>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>servletConfig</servlet-name>
+        <url-pattern>/servletConfig</url-pattern>
+    </servlet-mapping>
+
+    <!--servlet的全局参数，所有的servlet都可以使用-->
+    <context-param>
+        <param-name>globalparam</param-name>
+        <param-value>global</param-value>
+    </context-param>
+    <context-param>
+        <param-name>globalparam2</param-name>
+        <param-value>global</param-value>
+    </context-param>
+
 </web-app>
