@@ -2,17 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8e0368f4-d55b-4ceb-b236-58ae8acc94b8" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/lib/gson-2.1.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/ru/project/servlet/Login.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/gson_2_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/jQuery1.9.1-min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/login.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jsp/login.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jsp/main.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jsp/verifyCodeImg.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/index.jsp" afterPath="$PROJECT_DIR$/web/index.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/servlet16.iml" afterPath="$PROJECT_DIR$/servlet16.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="servlet16.iws" />
@@ -22,7 +11,7 @@
     <file path="/log4j.properties" changelist="8e0368f4-d55b-4ceb-b236-58ae8acc94b8" time="1384657314684" ignored="false" />
     <file path="/Test.java" changelist="8e0368f4-d55b-4ceb-b236-58ae8acc94b8" time="1384622813665" ignored="false" />
     <file path="/fragment.java" changelist="8e0368f4-d55b-4ceb-b236-58ae8acc94b8" time="1384623996326" ignored="false" />
-    <file path="/Dummy.txt" changelist="8e0368f4-d55b-4ceb-b236-58ae8acc94b8" time="1384659524631" ignored="false" />
+    <file path="/Dummy.txt" changelist="8e0368f4-d55b-4ceb-b236-58ae8acc94b8" time="1384669404109" ignored="false" />
     <file path="/login.jsp" changelist="8e0368f4-d55b-4ceb-b236-58ae8acc94b8" time="1384661527938" ignored="false" />
     <file path="/login.js" changelist="8e0368f4-d55b-4ceb-b236-58ae8acc94b8" time="1384669156701" ignored="false" />
     <file path="/index.jsp" changelist="8e0368f4-d55b-4ceb-b236-58ae8acc94b8" time="1384660824863" ignored="false" />
@@ -110,7 +99,7 @@
       <file leaf-file-name="Login.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/ru/project/servlet/Login.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="31" selection-start="800" selection-end="800" vertical-scroll-proportion="0.4771481">
+            <state line="32" column="47" selection-start="923" selection-end="923" vertical-scroll-proportion="0.67824495">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -666,12 +655,16 @@
       <created>1384659530167</created>
       <updated>1384659530167</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="log4j">
+      <created>1384669410143</created>
+      <updated>1384669410143</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -889,7 +882,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/ru/project/servlet/Login.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="31" selection-start="800" selection-end="800" vertical-scroll-proportion="0.4771481">
+        <state line="32" column="47" selection-start="923" selection-end="923" vertical-scroll-proportion="0.67824495">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
