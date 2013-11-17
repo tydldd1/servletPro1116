@@ -4,5 +4,15 @@
            xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
 		  http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
            version="3.0">
-
+    <!--log4j配置启动tomcat自动启动-->
+    <servlet>
+        <servlet-name>log4jInit</servlet-name>
+        <servlet-class>com.ru.project.utils.Log4jInitMethod</servlet-class>
+        <!--是启动顺序，0：表示什么时候用什么时候启动，1：表示自动启动 -->
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>log4jInit</servlet-name>
+        <url-pattern>/log4jinit</url-pattern>
+    </servlet-mapping>
 </web-app>

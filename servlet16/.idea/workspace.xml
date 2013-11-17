@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8e0368f4-d55b-4ceb-b236-58ae8acc94b8" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/commons_logging_1_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/commons_logging_1_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/servlet16.iml" afterPath="$PROJECT_DIR$/servlet16.iml" />
+    <list default="true" id="8e0368f4-d55b-4ceb-b236-58ae8acc94b8" name="Default" comment="log4j">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/ru/project/utils/Test2.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="servlet16.iws" />
@@ -13,7 +12,7 @@
     <file path="/log4j.properties" changelist="8e0368f4-d55b-4ceb-b236-58ae8acc94b8" time="1384657314684" ignored="false" />
     <file path="/Test.java" changelist="8e0368f4-d55b-4ceb-b236-58ae8acc94b8" time="1384622813665" ignored="false" />
     <file path="/fragment.java" changelist="8e0368f4-d55b-4ceb-b236-58ae8acc94b8" time="1384623996326" ignored="false" />
-    <file path="/Dummy.txt" changelist="8e0368f4-d55b-4ceb-b236-58ae8acc94b8" time="1384655244155" ignored="false" />
+    <file path="/Dummy.txt" changelist="8e0368f4-d55b-4ceb-b236-58ae8acc94b8" time="1384658970027" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,13 +76,22 @@
       <file leaf-file-name="log4j.properties" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/resource/log4j/log4j.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="35" selection-start="343" selection-end="343" vertical-scroll-proportion="0.0">
+            <state line="23" column="43" selection-start="883" selection-end="883" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="web.xml" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Test2.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/ru/project/utils/Test2.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="10" column="18" selection-start="156" selection-end="156" vertical-scroll-proportion="0.40219378">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="web.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
           <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorProvider">
             <state />
@@ -92,7 +100,7 @@
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="33" selection-start="489" selection-end="502" vertical-scroll-proportion="0.42553192">
+            <state line="5" column="25" selection-start="300" selection-end="300" vertical-scroll-proportion="-3.6666667">
               <folding />
             </state>
           </provider>
@@ -596,7 +604,11 @@
       <created>1384624245843</created>
       <updated>1384624245843</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="log4j">
+      <created>1384658847885</created>
+      <updated>1384658847885</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -622,7 +634,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32871974" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17656012" sideWeight="0.11245675" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17656012" sideWeight="0.11245675" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.88754326" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -772,13 +784,6 @@
         <state line="8" column="16" selection-start="138" selection-end="138" vertical-scroll-proportion="0.32175502" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/resource/log4j/log4j.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="35" selection-start="343" selection-end="343" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/ru/project/utils/Log4jInitMethod.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="21" column="27" selection-start="451" selection-end="451" vertical-scroll-proportion="0.2883895">
@@ -793,7 +798,7 @@
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="33" selection-start="489" selection-end="502" vertical-scroll-proportion="0.42553192">
+        <state line="5" column="25" selection-start="300" selection-end="300" vertical-scroll-proportion="-3.6666667">
           <folding />
         </state>
       </provider>
@@ -802,6 +807,20 @@
       </provider>
       <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleGeneralEditorProvider">
         <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/resource/log4j/log4j.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="43" selection-start="883" selection-end="883" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ru/project/utils/Test2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="18" selection-start="156" selection-end="156" vertical-scroll-proportion="0.40219378">
+          <folding />
+        </state>
       </provider>
     </entry>
   </component>
