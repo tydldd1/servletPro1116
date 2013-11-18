@@ -8,7 +8,9 @@
     <servlet>
         <servlet-name>log4jInit</servlet-name><!--servlet名称（最好和类名一致）和mapping的名称保持一致-->
         <servlet-class>com.ru.project.utils.Log4jInitMethod</servlet-class>
-        <!--启动顺序，1表示第一个被启动，2第二个被启动。。。。 -->
+        <!--当值为0或者大于0时，表示容器在应用启动时就加载这个servlet；
+            当是一个负数时或者没有指定时，则指示容器在该servlet被选择时才加载。
+            正数的值越小，启动该servlet的优先级越高。 -->
         <load-on-startup>1</load-on-startup>
     </servlet>
     <servlet-mapping>

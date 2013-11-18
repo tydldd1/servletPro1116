@@ -23,9 +23,10 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   <body>
         <div>主页面</div>
     <div>欢迎：<%=userName %></div>
+    <div><a href="/documents/解读Servlet生命周期.doc">Sevlet生命周期</a></div>
     <div><a href="/jumpPage">servlet跳转页面-重定向和转发</a></div>
     <div><a href="jsp/difference.jsp">getAttribute()和getParameter()的区别</a></div>
-    <div><a href="/servletConfig">ServletConfigS对象</a></div>
-    <div><a href="/servletConfig">Sevlet生命周期</a></div>
+    <div><a href="/servletConfig">ServletConfig对象</a> --注：ServletConfig可以得到在web.xmlz中配置的参数信息</div>
+
   </body>
 </html>

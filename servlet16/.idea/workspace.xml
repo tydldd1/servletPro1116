@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8e0368f4-d55b-4ceb-b236-58ae8acc94b8" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/ru/project/servletConfig/servlet/ServletConfig.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/ru/project/utils/Log4jInitMethod.java" afterPath="$PROJECT_DIR$/src/com/ru/project/utils/Log4jInitMethod.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/documents/解读Servlet生命周期.doc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/ru/project/servletConfig/servlet/ServletConfig.java" afterPath="$PROJECT_DIR$/src/com/ru/project/servletConfig/servlet/ServletConfig.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/jsp/main.jsp" afterPath="$PROJECT_DIR$/web/jsp/main.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
@@ -13,23 +13,25 @@
     <file path="/web.xml" changelist="8e0368f4-d55b-4ceb-b236-58ae8acc94b8" time="1384696144493" ignored="false" />
     <file path="/Log4jInitMethod.java" changelist="8e0368f4-d55b-4ceb-b236-58ae8acc94b8" time="1384695386294" ignored="false" />
     <file path="/log4j.properties" changelist="8e0368f4-d55b-4ceb-b236-58ae8acc94b8" time="1384657314684" ignored="false" />
-    <file path="/Test.java" changelist="8e0368f4-d55b-4ceb-b236-58ae8acc94b8" time="1384622813665" ignored="false" />
+    <file path="/Test.java" changelist="8e0368f4-d55b-4ceb-b236-58ae8acc94b8" time="1384760116797" ignored="false" />
     <file path="/fragment.java" changelist="8e0368f4-d55b-4ceb-b236-58ae8acc94b8" time="1384692687817" ignored="false" />
-    <file path="/Dummy.txt" changelist="8e0368f4-d55b-4ceb-b236-58ae8acc94b8" time="1384688966458" ignored="false" />
+    <file path="/Dummy.txt" changelist="8e0368f4-d55b-4ceb-b236-58ae8acc94b8" time="1384758107470" ignored="false" />
     <file path="/login.jsp" changelist="8e0368f4-d55b-4ceb-b236-58ae8acc94b8" time="1384661527938" ignored="false" />
     <file path="/login.js" changelist="8e0368f4-d55b-4ceb-b236-58ae8acc94b8" time="1384674701844" ignored="false" />
     <file path="/index.jsp" changelist="8e0368f4-d55b-4ceb-b236-58ae8acc94b8" time="1384660824863" ignored="false" />
     <file path="/a.dummy" changelist="8e0368f4-d55b-4ceb-b236-58ae8acc94b8" time="1384663724119" ignored="false" />
     <file path="/Login.java" changelist="8e0368f4-d55b-4ceb-b236-58ae8acc94b8" time="1384676863338" ignored="false" />
-    <file path="/main.jsp" changelist="8e0368f4-d55b-4ceb-b236-58ae8acc94b8" time="1384696089288" ignored="false" />
-    <file path="/JdbcUtil.java" changelist="8e0368f4-d55b-4ceb-b236-58ae8acc94b8" time="1384671737713" ignored="false" />
+    <file path="/main.jsp" changelist="8e0368f4-d55b-4ceb-b236-58ae8acc94b8" time="1384761515706" ignored="false" />
+    <file path="/JdbcUtil.java" changelist="8e0368f4-d55b-4ceb-b236-58ae8acc94b8" time="1384759379672" ignored="false" />
     <file path="/loginSerImp.java" changelist="8e0368f4-d55b-4ceb-b236-58ae8acc94b8" time="1384674141933" ignored="false" />
     <file path="/LoginSerImp.java" changelist="8e0368f4-d55b-4ceb-b236-58ae8acc94b8" time="1384674133083" ignored="false" />
     <file path="/User.java" changelist="8e0368f4-d55b-4ceb-b236-58ae8acc94b8" time="1384676230086" ignored="false" />
     <file path="/JumpPage.java" changelist="8e0368f4-d55b-4ceb-b236-58ae8acc94b8" time="1384679060160" ignored="false" />
     <file path="/jumpPage.jsp" changelist="8e0368f4-d55b-4ceb-b236-58ae8acc94b8" time="1384678400513" ignored="false" />
     <file path="/difference.jsp" changelist="8e0368f4-d55b-4ceb-b236-58ae8acc94b8" time="1384679610360" ignored="false" />
-    <file path="/ServletConfig.java" changelist="8e0368f4-d55b-4ceb-b236-58ae8acc94b8" time="1384695954738" ignored="false" />
+    <file path="/ServletConfig.java" changelist="8e0368f4-d55b-4ceb-b236-58ae8acc94b8" time="1384761262933" ignored="false" />
+    <file path="$PROJECT_DIR$/../../ssh/ssh0605/src/com/ru/javaExam/utildatabase/JdbcUtil.java" changelist="8e0368f4-d55b-4ceb-b236-58ae8acc94b8" time="1384760017997" ignored="false" />
+    <file path="$PROJECT_DIR$/../../ssh/ssh0605/src/com/ru/javaExam/test/Test.java" changelist="8e0368f4-d55b-4ceb-b236-58ae8acc94b8" time="1384760118878" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,26 +94,35 @@
     <leaf>
       <file leaf-file-name="web.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="16" selection-start="823" selection-end="823" vertical-scroll-proportion="-12.466666">
-              <folding />
-            </state>
+          <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorProvider">
+            <state />
           </provider>
           <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorReferencesProvider">
             <state />
           </provider>
-          <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorProvider">
-            <state />
-          </provider>
           <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleGeneralEditorProvider">
             <state />
+          </provider>
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="24" column="14" selection-start="1136" selection-end="1136" vertical-scroll-proportion="-13.2">
+              <folding />
+            </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="main.jsp" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/jsp/main.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="6" selection-start="536" selection-end="536" vertical-scroll-proportion="-6.645161">
+            <state line="29" column="0" selection-start="980" selection-end="980" vertical-scroll-proportion="-12.32258">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="JdbcUtil.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/ru/project/login/dao/JdbcUtil.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="173" column="13" selection-start="3860" selection-end="3860" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -120,30 +131,17 @@
       <file leaf-file-name="Log4jInitMethod.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/ru/project/utils/Log4jInitMethod.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="42" column="0" selection-start="1218" selection-end="1218" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Login.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/ru/project/login/servlet/Login.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="37" column="35" selection-start="1282" selection-end="1282" vertical-scroll-proportion="0.0">
+            <state line="31" column="19" selection-start="876" selection-end="876" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ServletConfig.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/ru/project/servletConfig/servlet/ServletConfig.java">
+      <file leaf-file-name="Login.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/ru/project/login/servlet/Login.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="0" selection-start="689" selection-end="689" vertical-scroll-proportion="0.35412845">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state line="53" column="45" selection-start="1849" selection-end="1849" vertical-scroll-proportion="1.6550459">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -179,9 +177,9 @@
         <option value="$PROJECT_DIR$/src/com/ru/project/pagejump/servlet/JumpPage.java" />
         <option value="$PROJECT_DIR$/web/jsp/difference.jsp" />
         <option value="$PROJECT_DIR$/src/com/ru/project/utils/Log4jInitMethod.java" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/src/com/ru/project/servletConfig/servlet/ServletConfig.java" />
         <option value="$PROJECT_DIR$/web/jsp/main.jsp" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
       </list>
     </option>
   </component>
@@ -245,8 +243,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -262,38 +258,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="servlet16" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="servlet16" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="servlet16" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="servlet16" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="servlet16" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jsp" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -351,56 +315,10 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="servlet16" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="servlet16" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="project" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="login" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="servlet" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="servlet16" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="servlet16" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="project" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="login" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -412,29 +330,26 @@
     <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
     <property name="MemberChooser.sorted" value="false" />
     <property name="recentsLimit" value="5" />
-    <property name="last_opened_file_path" value="G:/intelliJ-workspace/DtpSer" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../ssh/ssh0605" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="restartRequiresConfirmation" value="true" />
-    <property name="MemberChooser.showClasses" value="true" />
     <property name="FullScreen" value="false" />
+    <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="dynamic.classpath" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="dynamic.classpath" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="G:\GitRepositories\servletPro1116\servlet16\web\documents" />
       <recent name="G:\GitRepositories\servletPro1116\servlet16\web\WEB-INF\lib" />
       <recent name="G:\GitRepositories\servletPro1116\servlet16\src\com\ru\project\dao" />
       <recent name="G:\GitRepositories\servletPro1116\servlet16\web\jsp" />
       <recent name="G:\GitRepositories\servletPro1116\servlet16\web\js" />
-      <recent name="G:\GitRepositories\servletPro1116\servlet16\web\WEB-INF" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="G:\GitRepositories\servletPro1116\servlet16\src\resource\log4j" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.ru.project.pagejump" />
@@ -442,6 +357,9 @@
       <recent name="com.ru.project" />
       <recent name="com.ru.project.login" />
       <recent name="com.ru.project.service" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="G:\GitRepositories\servletPro1116\servlet16\src\resource\log4j" />
     </key>
   </component>
   <component name="RunManager" selected="Tomcat Server.Tomcat 6.0">
@@ -481,19 +399,6 @@
       <option name="PORT" value="5005" />
       <method />
     </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <method />
-    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
@@ -520,6 +425,19 @@
       <envs />
       <properties />
       <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -707,7 +625,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -825,9 +743,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/ru/project/login/entry/User.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="20" selection-start="61" selection-end="61" vertical-scroll-proportion="0.12065814">
-          <folding />
-        </state>
+        <state line="3" column="20" selection-start="61" selection-end="61" vertical-scroll-proportion="0.12065814" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/ru/project/login/service/imp/LoginSerImp.java">
@@ -857,56 +773,52 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/ru/project/login/dao/JdbcUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="99" column="36" selection-start="2392" selection-end="2392" vertical-scroll-proportion="0.4440367">
+        <state line="173" column="13" selection-start="3860" selection-end="3860" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
+      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorProvider">
+        <state />
+      </provider>
+      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorReferencesProvider">
+        <state />
+      </provider>
+      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleGeneralEditorProvider">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="14" selection-start="1136" selection-end="1136" vertical-scroll-proportion="-13.2">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/ru/project/utils/Log4jInitMethod.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="0" selection-start="1218" selection-end="1218" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ru/project/login/servlet/Login.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="35" selection-start="1282" selection-end="1282" vertical-scroll-proportion="0.0">
+        <state line="31" column="19" selection-start="876" selection-end="876" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/jsp/main.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="6" selection-start="536" selection-end="536" vertical-scroll-proportion="-6.645161">
+        <state line="29" column="0" selection-start="980" selection-end="980" vertical-scroll-proportion="-12.32258">
           <folding />
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="16" selection-start="823" selection-end="823" vertical-scroll-proportion="-12.466666">
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorReferencesProvider">
-        <state />
-      </provider>
-      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorProvider">
-        <state />
-      </provider>
-      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleGeneralEditorProvider">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/ru/project/servletConfig/servlet/ServletConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="0" selection-start="689" selection-end="689" vertical-scroll-proportion="0.35412845">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state line="11" column="19" selection-start="349" selection-end="349" vertical-scroll-proportion="0.24220183">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ru/project/login/servlet/Login.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="53" column="45" selection-start="1849" selection-end="1849" vertical-scroll-proportion="1.6550459">
+          <folding />
         </state>
       </provider>
     </entry>
