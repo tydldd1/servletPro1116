@@ -27,6 +27,6 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     <div><a href="/jumpPage">servlet跳转页面-重定向和转发</a></div>
     <div><a href="jsp/difference.jsp">getAttribute()和getParameter()的区别</a></div>
     <div><a href="/servletConfig">ServletConfig对象</a> --注：ServletConfig可以得到在web.xmlz中配置的参数信息</div>
-
+    <div><a href="jsp/servletcontext.jsp">ServletContext对象可以让所有servlet访问</a></div>
   </body>
 </html>
