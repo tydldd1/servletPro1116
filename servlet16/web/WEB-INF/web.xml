@@ -21,6 +21,7 @@
         <url-pattern>/log4j</url-pattern><!--页面访问servlet时的链接地址-->
     </servlet-mapping>
     <!--log4j配置启动tomcat自动启动 end-->
+
     <!--登陆-->
     <servlet>
         <servlet-name>login</servlet-name><!--servlet名称（最好和类名一致）和mapping的名称保持一致-->

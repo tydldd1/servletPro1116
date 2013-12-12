@@ -1,4 +1,5 @@
 <%@ page import="com.ru.project.login.entry.User" %>
+<%@ page import="com.ru.project.counter.ServletCounter" %>
 <%--
   Created by IntelliJ IDEA.
   User: 成如
@@ -13,7 +14,9 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 %>
 <%
     User user = (User) request.getSession().getAttribute("user");
+    ServletCounter sc = (ServletCounter) request.getSession().getAttribute("counter");
     String userName = user.getUserName();
+    int counter = sc.getPeopleNumber();
 %>
 <html>
   <head>
@@ -22,7 +25,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   </head>
   <body>
         <div>主页面</div>
-    <div>欢迎：<%=userName %></div>
+    <div>欢迎：<%=userName %>,您是第<%=counter%>个登陆的用户</div>
     <div><a href="/documents/解读Servlet生命周期.doc">Sevlet生命周期</a></div>
     <div><a href="/jumpPage">servlet跳转页面-重定向和转发</a></div>
     <div><a href="jsp/difference.jsp">getAttribute()和getParameter()的区别</a></div>

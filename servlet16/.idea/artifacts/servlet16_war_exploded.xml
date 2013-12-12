@@ -8,11 +8,10 @@
           <element id="module-output" name="servlet16" />
         </element>
         <element id="directory" name="lib">
-          <element id="library" level="project" name="commons-logging-1.1" />
           <element id="library" level="project" name="gson-2.1" />
           <element id="library" level="project" name="junit-4.10 (2)" />
-          <element id="library" level="project" name="log4j-1.2.16" />
           <element id="library" level="project" name="mysql-connector-java-5.1.6-bin" />
+          <element id="library" level="project" name="log4j" />
         </element>
       </element>
     </root>
