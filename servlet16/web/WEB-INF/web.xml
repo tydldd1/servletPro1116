@@ -4,6 +4,9 @@
            xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
 		  http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
            version="3.0">
+    <listener>
+        <listener-class>com.ru.project.listener.Listeners</listener-class>
+    </listener>
     <!--log4j配置启动tomcat自动启动 begin-->
     <servlet>
         <servlet-name>log4jInit</servlet-name><!--servlet名称（最好和类名一致）和mapping的名称保持一致-->
