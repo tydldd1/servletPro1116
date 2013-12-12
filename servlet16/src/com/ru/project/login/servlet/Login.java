@@ -32,6 +32,7 @@ public class Login extends HttpServlet{
         String userName = req.getParameter("userName");
         String password = req.getParameter("password");
         log.debug("用户名：" + userName + "密码：" + password);
+
         //得到user对象
         Object[] obj = loginSer.getUser(userName,password);
         if (obj != null){
