@@ -8,7 +8,7 @@ import java.io.IOException;
 import java.io.PrintWriter;
 
 /**
- * Description: ServletConfig可以得到在web.xmlz中配置的参数信息
+ * Description: ServletConfig可以得到在web.xml中配置的参数信息
  * User: NanChengRu
  * Date: 13-11-17
  * Time: 下午8:54
