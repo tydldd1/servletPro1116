@@ -9,6 +9,7 @@ import org.apache.log4j.Logger;
 
 import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
+import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -30,34 +31,71 @@ public class Login extends HttpServlet{
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         resp.setCharacterEncoding("UTF-8");
-        PrintWriter out = resp. getWriter();
+        PrintWriter out = resp.getWriter();
         String userName = req.getParameter("userName");
         String password = req.getParameter("password");
         log.debug("用户名：" + userName + "密码：" + password);
 
-        //得到user对象
-        Object[] obj = loginSer.getUser(userName,password);
-        if (obj != null){
-            //将计数器对象放入session
-            putCounterToSession(req);
-            //将user对象放入session
-            putUserToSession(req, obj[1].toString());
+        try {
+            //得到user对象
+            Object[] obj = loginSer.getUser(userName,password);
+            if (obj != null){
+                if(req.getSession() == null){
+                    System.out.println("有session");
+                }
+                //将总登陆计数器对象放入session
+                putCounterToSession(req);
+                System.out.println("将总登陆计数器对象放入session");
+                //将user对象放入session
+                putUserToSession(req, obj[1].toString());
+                System.out.println("将user对象放入session");
+                //添加/修改/删除servletContext属性,触发ServletContextAttributeListener监听器
+                addServletContextAttribute(req);
+                modifyServletContextAttribute(req);
+                removeServletContextAttribute(req);
+                System.out.println("添加/修改/删除servletContext属性,触发ServletContextAttributeListener监听器");
+                //处理cookie
+                //handleCookie(req, resp);
+                //System.out.println("处理cookie");
 
-            //将需要返回的数据转换成json格式  返回
-            Gson gson = new Gson();
-            String message = gson.toJson("success");
-            out.print(message);
-        }else {
-            Gson gson = new Gson();
-            String message = gson.toJson("fail");
-            out.print(message);
+                //将需要返回的数据转换成json格式  返回
+                Gson gson = new Gson();
+                String message = gson.toJson("success_" + req.getSession().getId());
+                out.print(message);
+                System.out.println("结束");
+            }else {
+                Gson gson = new Gson();
+                String message = gson.toJson("fail");
+                out.print(message);
+            }
+        }catch (Exception e){
+            e.printStackTrace();
         }
+
     }
 
-    @Override
-    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        //如果是post提交直接使用doGet方法
-        this.doGet(req,resp);
+    /**
+     * cookie操作
+     * @param request
+     */
+    private void handleCookie(HttpServletRequest request,  HttpServletResponse response){
+        //得到cookie
+        Cookie[] cookies = request.getCookies();
+        System.out.println("cookie数组的长度：" + cookies.length);
+        for (Cookie cookie : cookies){
+            System.out.println("***************************--开始");
+            System.out.println("cookie路径：" + cookie.getPath());
+            System.out.println("cookie最大生命周期：" + cookie.getMaxAge());
+            System.out.println("cookie名：" + cookie.getName());
+            System.out.println("cookie值：" + cookie.getValue());
+            System.out.println("cookie描述：" + cookie.getComment());
+            System.out.println("cookie：" + cookie.toString());
+            System.out.println("***************************--结束");
+        }
+        //将JSESSIONID放入cookie
+        Cookie cookie = new Cookie("JSESSIONID", request.getSession().getId());
+        cookie.setMaxAge(3600);
+        response.addCookie(cookie);
     }
 
     /**
@@ -79,6 +117,39 @@ public class Login extends HttpServlet{
         User user = new User();
         user.setUserName(userName);
         request.getSession().setAttribute("user", user);
-        log.info("用户信息：" + ((User)request.getSession().getAttribute("user")).getUserName());
+        System.out.println("用户信息：" + ((User) request.getSession().getAttribute("user")).getUserName());
+    }
+
+    /**
+     * 添加一个servletContext属性
+     * @param request
+     */
+    private void addServletContextAttribute(HttpServletRequest request){
+        ServletContext sc = request.getSession().getServletContext();
+        sc.setAttribute("addContext", "添加了一个servletContext属性");
+    }
+
+    /**
+     * 修改servletContext属性
+     * @param request
+     */
+    private void modifyServletContextAttribute(HttpServletRequest request){
+        ServletContext sc = request.getSession().getServletContext();
+        sc.setAttribute("addContext", "修改servletContext属性addContext");
+    }
+
+    /**
+     * 删除servletContext属性
+     * @param request
+     */
+    private void removeServletContextAttribute(HttpServletRequest request){
+        ServletContext sc = request.getSession().getServletContext();
+        sc.setAttribute("addContext", null);
+    }
+
+    @Override
+    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        //如果是post提交直接使用doGet方法
+        this.doGet(req,resp);
     }
 }
