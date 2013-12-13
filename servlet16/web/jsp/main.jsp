@@ -18,6 +18,9 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     String userName = user.getUserName();
     int counter = sc.getPeopleNumber();
 %>
+<%
+    String url = response.encodeURL("jsp/sessionCookieDifference.jsp");
+%>
 <html>
   <head>
     <base href="<%=basePath%>">
@@ -31,5 +34,6 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     <div><a href="jsp/difference.jsp">getAttribute()和getParameter()的区别</a></div>
     <div><a href="/servletConfig">ServletConfig对象</a> --注：ServletConfig可以得到在web.xmlz中配置的参数信息</div>
     <div><a href="jsp/servletcontext.jsp">ServletContext对象可以让所有servlet访问</a></div>
+    <div><a href="<%=url%>">Session和Cookie的区别</a></div>
   </body>
 </html>
