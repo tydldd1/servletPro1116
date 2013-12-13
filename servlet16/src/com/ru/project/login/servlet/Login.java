@@ -47,6 +47,8 @@ public class Login extends HttpServlet{
                 removeServletContextAttribute(req);
                 //处理cookie
                 handleCookie(req, resp);
+                //处理session
+                handleSession(req);
 
                 //将需要返回的数据转换成json格式  返回
                 Gson gson = new Gson();
@@ -74,7 +76,7 @@ public class Login extends HttpServlet{
         //修改session属性
         session.setAttribute("handleSession", "修改一个session属性");
         //删除session属性
-        session.setAttribute("handleSession", null);
+        session.removeAttribute("handleSession");
     }
 
     /**
@@ -147,7 +149,7 @@ public class Login extends HttpServlet{
      */
     private void removeServletContextAttribute(HttpServletRequest request){
         ServletContext sc = request.getSession().getServletContext();
-        sc.setAttribute("addContext", null);
+        sc.removeAttribute("addContext");
     }
 
     @Override
