@@ -9,10 +9,7 @@ import org.apache.log4j.Logger;
 
 import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
-import javax.servlet.http.Cookie;
-import javax.servlet.http.HttpServlet;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.*;
 import java.io.IOException;
 import java.io.PrintWriter;
 
@@ -40,29 +37,21 @@ public class Login extends HttpServlet{
             //得到user对象
             Object[] obj = loginSer.getUser(userName,password);
             if (obj != null){
-                if(req.getSession() == null){
-                    System.out.println("有session");
-                }
                 //将总登陆计数器对象放入session
                 putCounterToSession(req);
-                System.out.println("将总登陆计数器对象放入session");
                 //将user对象放入session
                 putUserToSession(req, obj[1].toString());
-                System.out.println("将user对象放入session");
                 //添加/修改/删除servletContext属性,触发ServletContextAttributeListener监听器
                 addServletContextAttribute(req);
                 modifyServletContextAttribute(req);
                 removeServletContextAttribute(req);
-                System.out.println("添加/修改/删除servletContext属性,触发ServletContextAttributeListener监听器");
                 //处理cookie
-                //handleCookie(req, resp);
-                //System.out.println("处理cookie");
+                handleCookie(req, resp);
 
                 //将需要返回的数据转换成json格式  返回
                 Gson gson = new Gson();
                 String message = gson.toJson("success_" + req.getSession().getId());
                 out.print(message);
-                System.out.println("结束");
             }else {
                 Gson gson = new Gson();
                 String message = gson.toJson("fail");
@@ -72,6 +61,20 @@ public class Login extends HttpServlet{
             e.printStackTrace();
         }
 
+    }
+
+    /**
+     * 处理sesssion
+     * @param request
+     */
+    private void handleSession(HttpServletRequest request){
+        HttpSession session = request.getSession();
+        //添加session属性
+        session.setAttribute("handleSession", "添加一个session属性");
+        //修改session属性
+        session.setAttribute("handleSession", "修改一个session属性");
+        //删除session属性
+        session.setAttribute("handleSession", null);
     }
 
     /**

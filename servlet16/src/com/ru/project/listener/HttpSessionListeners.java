@@ -2,10 +2,7 @@ package com.ru.project.listener;
 
 import org.apache.log4j.Logger;
 
-import javax.servlet.http.HttpSessionAttributeListener;
-import javax.servlet.http.HttpSessionBindingEvent;
-import javax.servlet.http.HttpSessionEvent;
-import javax.servlet.http.HttpSessionListener;
+import javax.servlet.http.*;
 
 /**
  * Created by 成如 on 13-12-12.
@@ -16,19 +13,29 @@ import javax.servlet.http.HttpSessionListener;
 public class HttpSessionListeners  implements HttpSessionListener, HttpSessionAttributeListener{
     Logger log = Logger.getLogger(HttpSessionListeners.class);
 
+    /**
+     * 当在session中增加、移除或改动属性值时会触发这个监听器
+     */
+
     @Override
     public void attributeAdded(HttpSessionBindingEvent httpSessionBindingEvent) {
-
+        HttpSession session = httpSessionBindingEvent.getSession();
+        String handSession = session.getAttribute("handleSession").toString();
+        System.out.println("添加session的属性：" + handSession);
     }
 
     @Override
     public void attributeRemoved(HttpSessionBindingEvent httpSessionBindingEvent) {
-
+        HttpSession session = httpSessionBindingEvent.getSession();
+        String handSession = session.getAttribute("handleSession").toString();
+        System.out.println("删除session的属性：" + handSession);
     }
 
     @Override
     public void attributeReplaced(HttpSessionBindingEvent httpSessionBindingEvent) {
-
+        HttpSession session = httpSessionBindingEvent.getSession();
+        String handSession = session.getAttribute("handleSession").toString();
+        System.out.println(handSession);
     }
 
     /**
