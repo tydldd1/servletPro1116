@@ -5,6 +5,10 @@ import com.ru.project.utils.ReadWriteFile;
 import org.apache.log4j.Logger;
 
 import javax.servlet.*;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 /**
  * *这个监听器的所有行为都在com.ru.project.login.servlet.Login中完成
@@ -36,27 +40,35 @@ public class ServletContextListeners implements ServletContextListener, ServletC
         int number = 0;
         System.out.println("servletContext环境创建，web启动");
 
-        //web启动时，向ServletContext中添加一个计数器对象，这个对象保存用户登录的次数
         ServletContext sc = sce.getServletContext();
 
-        //计数器对象
+        //servletcontgext保存一个sessonid列表，这个列表在登陆成功且是一个新的session时，+1
+        List<String> list = new ArrayList<String>();
+        sc.setAttribute("sessionList", list);
+
+        //总登陆计数器对象
         ServletCounter counter = new ServletCounter();
         String filePath = sc.getRealPath("/documents/counter");
         String num = ReadWriteFile.ReadFile(filePath);
         if (num != null && !num.equals("")){
             number = Integer.parseInt(num);
         }
-        counter.setPeopleNumber(number);
 
+        counter.setPeopleNumber(number);
         sc.setAttribute("counter",counter);
-        System.out.println("总登陆人数" + number);
+
+        //在线人数
+        int onlineCounter = 0;
+        sc.setAttribute("onlineCounter", onlineCounter);
+        System.out.println("servletContext环境创建时，注册登录次数计数器。总登陆人数" + number +
+            "当前在线人数：" + sc.getAttribute("onlineCounter"));
 
     }
 
     public void contextDestroyed(ServletContextEvent sce) {
         String filePath = sce.getServletContext().getRealPath("/documents/counter");
 
-        //web关闭时，将登陆次数写入文件
+        //web关闭时，将登陆次数写入文件,
         ServletCounter counter = (ServletCounter) sce.getServletContext().getAttribute("counter");
         String number = counter.getPeopleNumber() + "";
         ReadWriteFile.writeFile(number, filePath);

@@ -39,6 +39,16 @@
         <url-pattern>/login</url-pattern>
     </servlet-mapping>
 
+    <!--退出登录-->
+    <servlet>
+        <servlet-name>logout</servlet-name>
+        <servlet-class>com.ru.project.login.servlet.Logout</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>logout</servlet-name>
+        <url-pattern>/logout</url-pattern>
+    </servlet-mapping>
+
     <!--cookie禁用，重写url-->
     <servlet>
         <servlet-name>encodeUrl</servlet-name><!--servlet名称（最好和类名一致）和mapping的名称保持一致-->

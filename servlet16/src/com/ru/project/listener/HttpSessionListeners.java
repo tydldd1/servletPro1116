@@ -3,6 +3,7 @@ package com.ru.project.listener;
 import org.apache.log4j.Logger;
 
 import javax.servlet.http.*;
+import java.util.List;
 
 /**
  * Created by 成如 on 13-12-12.
@@ -14,7 +15,7 @@ public class HttpSessionListeners  implements HttpSessionListener, HttpSessionAt
     Logger log = Logger.getLogger(HttpSessionListeners.class);
 
     /**
-     * 当在session中增加、移除或改动属性值时会触发这个监听器
+     * HttpSessionAttributeListener监听器，当在session中增加、移除或改动属性值时会触发
      */
 
     @Override
@@ -27,7 +28,7 @@ public class HttpSessionListeners  implements HttpSessionListener, HttpSessionAt
     @Override
     public void attributeRemoved(HttpSessionBindingEvent httpSessionBindingEvent) {
         HttpSession session = httpSessionBindingEvent.getSession();
-        String handSession = session.getAttribute("handleSession").toString();
+        String handSession = (String) session.getAttribute("handleSession");
         System.out.println("删除session的属性：" + handSession);
     }
 
@@ -61,6 +62,12 @@ public class HttpSessionListeners  implements HttpSessionListener, HttpSessionAt
 
     @Override
     public void sessionDestroyed(HttpSessionEvent httpSessionEvent) {
+        System.out.println("销毁的session = " + httpSessionEvent.getSession().getId());
+        List<String> sessionlist = (List<String>) httpSessionEvent.getSession().getServletContext().getAttribute("sessionList");
+        if(sessionlist.contains(httpSessionEvent.getSession().getId())){
+            int onlineCounter = (Integer)httpSessionEvent.getSession().getServletContext().getAttribute("onlineCounter");
+            httpSessionEvent.getSession().getServletContext().setAttribute("onlineCounter", onlineCounter - 1);
+        }
         System.out.println("session超时，服务器销毁HttpSession对象，" +
                 "并触发HttpSessionListener事件监听器的sessionDestroyed方法");
     }

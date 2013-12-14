@@ -19,8 +19,7 @@ function logCheck(){
         data:params,
         dataType:"json",
         success:function(data){
-            if(data.contains("success")){
-                alert(data.substring(8));
+            if(data.indexOf("success_") != -1){
                 window.location.href = "jsp/main.jsp;jsessionid=" + data.substring(8);
             }else if(data == "fail"){
                 alert("用户名或密码错误");

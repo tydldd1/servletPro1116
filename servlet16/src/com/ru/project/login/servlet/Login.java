@@ -12,6 +12,8 @@ import javax.servlet.ServletException;
 import javax.servlet.http.*;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.List;
+import java.util.Map;
 
 /**
  * Description:登陆操作
@@ -37,8 +39,8 @@ public class Login extends HttpServlet{
             //得到user对象
             Object[] obj = loginSer.getUser(userName,password);
             if (obj != null){
-                //将总登陆计数器对象放入session
-                putCounterToSession(req);
+                //修改总登陆人数和在线人数
+                updateCounter(req);
                 //将user对象放入session
                 putUserToSession(req, obj[1].toString());
                 //添加/修改/删除servletContext属性,触发ServletContextAttributeListener监听器
@@ -86,7 +88,6 @@ public class Login extends HttpServlet{
     private void handleCookie(HttpServletRequest request,  HttpServletResponse response){
         //得到cookie
         Cookie[] cookies = request.getCookies();
-        System.out.println("cookie数组的长度：" + cookies.length);
         for (Cookie cookie : cookies){
             System.out.println("***************************--开始");
             System.out.println("cookie路径：" + cookie.getPath());
@@ -104,14 +105,42 @@ public class Login extends HttpServlet{
     }
 
     /**
-     * 将计数器对象放入session
+     * 将总登陆人数 + 1
      * @param request
      */
-    private void putCounterToSession(HttpServletRequest request){
+    private void putLogingCounter(HttpServletRequest request){
         ServletCounter counter = (ServletCounter) request.getSession().getServletContext().getAttribute("counter");
         counter.setPeopleNumber(counter.getPeopleNumber() + 1);
-        request.getSession().setAttribute("counter", counter);
     }
+
+    /**
+     * 登陆成功，在线人数+1
+     * @param request
+     */
+    private void putOnlineCounter(HttpServletRequest request){
+        int onlineCounter = (Integer)request.getSession().getServletContext().getAttribute("onlineCounter");
+        request.getSession().getServletContext().setAttribute("onlineCounter", onlineCounter + 1);
+    }
+
+    /**
+     * 将sessionid放入servletcontext.同时更新总登陆人数和在线人数
+     * @param request
+     */
+    private void updateCounter(HttpServletRequest request){
+        String sessionId =  request.getSession().getId();
+        List<String> list = (List<String>) request.getSession().getServletContext().getAttribute("sessionList");
+        //假如是新session
+        if (!list.contains(sessionId)){
+            //将sessionid放入servletcontext属性
+            list.add(sessionId);
+            System.out.println("新增的session = " + sessionId);
+            //修改servletcontext的总登陆人数属性
+            putLogingCounter(request);
+            //修改在线人数、
+            putOnlineCounter(request);
+        }
+    }
+
 
     /**
      * 将user对象放入session
