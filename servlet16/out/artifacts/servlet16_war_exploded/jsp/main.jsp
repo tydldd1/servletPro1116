@@ -14,21 +14,29 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 %>
 <%
     User user = (User) request.getSession().getAttribute("user");
-    ServletCounter sc = (ServletCounter) request.getSession().getAttribute("counter");
+    ServletCounter sc = (ServletCounter) request.getSession().getServletContext().getAttribute("counter");
     String userName = user.getUserName();
     int counter = sc.getPeopleNumber();
 %>
 <%
     String url = response.encodeURL("jsp/sessionCookieDifference.jsp");
 %>
+<%
+    ServletContext servletContext = request.getSession().getServletContext();
+    int onlineCounter =  Integer.parseInt(request.getSession().getServletContext().getAttribute("onlineCounter").toString());
+%>
 <html>
   <head>
     <base href="<%=basePath%>">
     <title></title>
+    <script type="text/javascript" src="js/main.js"></script>
   </head>
   <body>
         <div>主页面</div>
-    <div>欢迎：<%=userName %>,您是第<%=counter%>个登陆的用户</div>
+    <div>
+        欢迎：<%=userName %>,您是第<%=counter%>个登陆的用户-----当前在线人数 <%=onlineCounter%> 人-------
+        <p><input type="button" value="安全退出" onclick="logout()"></p>
+    </div>
     <div><a href="/documents/解读Servlet生命周期.doc">Sevlet生命周期</a></div>
     <div><a href="/jumpPage">servlet跳转页面-重定向和转发</a></div>
     <div><a href="jsp/difference.jsp">getAttribute()和getParameter()的区别</a></div>
