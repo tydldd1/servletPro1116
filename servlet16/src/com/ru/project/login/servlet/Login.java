@@ -51,6 +51,8 @@ public class Login extends HttpServlet{
                 handleCookie(req, resp);
                 //处理session
                 handleSession(req);
+                //处理request
+                handleRequest(req);
 
                 //将需要返回的数据转换成json格式  返回
                 Gson gson = new Gson();
@@ -65,6 +67,15 @@ public class Login extends HttpServlet{
             e.printStackTrace();
         }
 
+    }
+
+    /**
+     * 处理request
+     */
+    private void handleRequest(HttpServletRequest request){
+        request.setAttribute("requestAttribute", "request添加一个属性");
+        request.setAttribute("requestAttribute", "修改request属性");
+        request.removeAttribute("requestAttribute");
     }
 
     /**
